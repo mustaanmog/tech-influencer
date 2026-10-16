@@ -43,3 +43,89 @@ body {
 /* 
     START WRITING YOUR CSS CODE HERE
 */
+
+/* Header Styles */
+
+.header{
+  overflow: hidden;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.header-right{
+  float: left;
+}
+
+.header-right > a{
+  color: red;
+  font-family: fantasy;
+  font-size: 18px;
+  padding: 12px;
+  text-decoration: none;
+ 
+}
+
+.header-right > a:hover{
+  color: purple;
+}
+
+.header-right > a:active{
+  color: green;
+  background-color: darkgray;
+}
+
+.header-right{
+  float: right;
+  margin-top: 12px;
+}
+
+/* Main Content Styles*/
+
+.left-col{
+  float: left;
+  width: 75%;
+}
+
+
+.card{
+  background-color: beige;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Style for other content */
+
+.right-col{
+  float: left;
+  width: 25%;
+  background-color: burlywood;
+  padding: 20px;
+}
+
+@media(max-width: 600px){
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ 
+  .left-col, .right-col{
+    width: 100%;
+  }
+
+
+  .header-right{
+    float: none;
+  }
+ 
+  .card{
+   font-size: 30px;
+  }
+ 
+}
+
+image{
+  max-width: 100%;
+  height: auto;
+}
+
